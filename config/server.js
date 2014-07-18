@@ -14,20 +14,38 @@
 
 module.exports = {
   drawRoutes: function(app) {
-    app.post('/login', function(req, res) {
+    app.post('/api/login', function(req, res) {
       res.json({ message: 'logging in!' });
     });
 
-    app.post('/logout', function(req, res) {
+    app.post('/api/logout', function(req, res) {
       res.json({ message: 'logging out!'});
     });
 
-    app.get('/books', function (req, res) {
-      res.json([
-        {title: 'Great Expectations', author: 'Dickens'},
-        {title: 'Foundation Series', author: 'Asimov'},
-        {title: 'Treasure Island', author: 'Stephenson'}
-      ]);
-    });
+//    app.use('/api/tasks', function (req, res){
+//        var r = req.params[0];
+//        console.log(r);
+//        req.pipe(request('http://localhost:8080/api/tasks')).pipe(res);
+//    });
+
+//    app.use('/api/(.+)', function (req, res){
+//        var r = req.params[0];
+//        console.log(r);
+//        req.pipe(request('http://localhost:8080/' + r)).pipe(res);
+//    });
+
+//    app.post('/task/new', function(req, res) {
+//          res.json({name: 'New Task', description: 'New Task Description'});
+//        });
+
+//    app.get('/api/tasks', function (req, res) {
+//      res.json([
+//        {name: 'Wash Dishes', description: 'Duh'},
+//        {name: 'Do Laundry', description: 'wash in cold...'},
+//        {name: 'Buy Eggs', description: 'the cruelty-free kind'}
+//      ]);
+//    });
   }
 };
+
+//var request = require('request');

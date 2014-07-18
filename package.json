@@ -18,5 +18,8 @@
   "scripts": {
     "start": "lineman run",
     "test": "lineman spec-ci"
+  },
+  "dependencies": {
+    "request": "^2.37.0"
   }
 }

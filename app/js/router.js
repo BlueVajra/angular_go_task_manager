@@ -12,9 +12,9 @@ angular.module("app").config(function($routeProvider, $locationProvider) {
     controller: 'HomeController'
   });
 
-  $routeProvider.when('/list-of-books', {
-    templateUrl: 'books.html',
-    controller: 'BooksController'
+  $routeProvider.when('/tasks', {
+    templateUrl: 'tasks.html',
+    controller: 'TasksController'
     // uncomment if you want to see an example of a route that resolves a request prior to rendering
     // resolve: {
     //   books : function(BookService) {
