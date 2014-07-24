@@ -1,0 +1,19 @@
+<p>Create a new Task below</p>
+<form role="form" ng-submit="addTask()">
+    <fieldset class="radius">
+        <div class="row">
+            <div class="large-6 columns">
+                <input type="text" name="name" placeholder="name" ng-model="task.Name" required/>
+            </div>
+            <div class="large-6 columns">
+                <input type="text" name="description" placeholder="description" ng-model="task.Description" required/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <button id="new_task" type="submit" class="button large expand radius">Add Task</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

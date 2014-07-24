@@ -5,12 +5,13 @@
     <link rel="stylesheet" type="text/css" href="/css/app.css" media="all" />
   </head>
   <body>
-    <div class="row">
-      <div class="large-12">
-        <h1>A Lineman Angular Setup</h1>
+     <header>
+     <h1>A Go-Angular Joint Task List</h1>
+     </header>
+     <main>
         <div id="view" ng-view></div>
-      </div>
-    </div>
+     </main>
+
 
     <script type="text/javascript" src="/js/app.js"></script>
   </body>

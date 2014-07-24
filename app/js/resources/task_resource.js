@@ -1,3 +1,3 @@
-angular.module("app").factory("TaskResource", function($q, $resource) {
-  return $resource('/api/tasks');
+angular.module("app").factory("Task", function($q, $resource) {
+  return $resource('http://107.170.31.184:8080/api/tasks');
 });
