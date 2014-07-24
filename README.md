@@ -24,3 +24,5 @@ Full tests have not been implemented
 
 1. heroku create --stack cedar --buildpack http://github.com/linemanjs/heroku-buildpack-lineman.git
 2. git push heroku master
+
+you can see it live on heroku at http://warm-oasis-8062.herokuapp.com/
